@@ -1,0 +1,77 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+    background-image: url(6nOJLFMIQ8qqkGj9m491OA.jpg);
+    height: 90vh;
+    /* width: 100%; */
+    background-size: cover;
+    background-position: center;
+    /* margin: 1.5rem; */
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    overflow: hidden;
+    background-color: aqua;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(255, 196, 0, 0.8);
+    border-radius: 15px;
+    height: 18vh;
+    width: 85%;
+    margin: auto;
+    justify-content: flex-end;
+}
+
+#logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 10px;
+    float: left;
+    margin-right: 420px;
+    /* background-color: blueviolet; */
+    font-weight: bolder;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+    width: 90px;
+    padding: 10px;
+    /* background-color: chocolate; */
+}
+
+li a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: black;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 14px;
+    border-radius: 9px;
+}
+
+#giveit {
+    background-color: black;
+    color: white;
+    border-radius: 9px;
+    padding: 14px;
+    width: 50px;
+}

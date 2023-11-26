@@ -1,0 +1,90 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+    width: 90px;
+    padding: 10px;
+    /* background-color: chocolate; */
+}
+
+li a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: black;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 14px;
+    border-radius: 9px;
+}
+
+.the-qr-container {
+    background-color: #dddddd;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    width: 650px;
+    margin: auto;
+    align-items: center;
+    font-weight: bolder;
+    border-radius: 15px;
+}
+
+/* #codeg{
+    background-color: blue;
+} */
+.generating-button {
+    /* background-color: bisque; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+
+}
+
+.qr-code-center{
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#submit-generatingbutton {
+    border: none;
+    padding: 7px;
+    margin: 9px;
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+}
+
+#tag-for-generation {
+    margin: 15px;
+    font-size: x-large;
+}
+
+.usns-for-qr {
+    font-size: medium;
+}
+
+#usns {
+    padding: 4px;
+    border: none;
+    border-radius: 3px;
+}
+#submit-generatingbutton:hover{
+    cursor: pointer;
+}

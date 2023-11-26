@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>warden DashBoard</title>
+    <link rel="stylesheet" href="styleforapplication.css">
+
+</head>
+
+<body>
+    <!-- <div class="container">
+        <nav>
+            <div class="navbar">
+                <h2 id="logo">Leave Management</h2>
+                <ul>
+                    <li><a href="warden.html">HOME</a></li>
+                     <li><a href="index2.html">LOGIN</a></li> -->
+
+    <ul>
+        <li> <a href="warden.html">HOME</a></li>
+    </ul>
+    <!-- </ul>
+            </div>
+        </nav> -->
+    <div class="paneldata">
+        <!-- <table border="1">
+            <tr>
+                <th>names</th>
+            </tr>
+            <tbody>
+                {% for leave in application%}
+                <tr>
+                    <td>{{ leave.name }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table> -->
+
+
+
+        <table border="1" id="data-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>USN</th>
+                    <th>StartDate</th>
+                    <th>EndDate</th>
+                    <th>TotalDays</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody id="data-table-body">
+            </tbody>
+        </table>
+
+        <!-- </div> -->
+        <!-- </div> -->
+        <script src="dashboarduse.js"></script>
+</body>
+
+</html>

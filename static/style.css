@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    /* background-image: url(6nOJLFMIQ8qqkGj9m491OA.jpg); */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+}
+
+/* .blurback{
+    background: inherit;
+    filter: blur(20px);
+} */
+.container {
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    overflow: hidden;
+}
+
+.login__forms {
+    position: absolute;
+    height: 310px;
+    width: 310px;
+
+    /* background: white; */
+    /* background-color: rgba(255, 196, 0, 0.8); */
+    background-color: #a12b97;
+
+    box-shadow: 0 0 50px rgb(0, 0, 0);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* margin-top: 50px; */
+    /* background-color: blue; */
+}
+
+.login__register {
+    position: absolute;
+
+    /* margin-left: 0px; */
+    margin: auto;
+    /* height: 200px; */
+    border-radius: 1rem;
+    padding: 2rem 1rem;
+    background-color: white;
+    border-radius: 1rem;
+    /* transition: none; */
+    overflow: hidden;
+}
+
+.login__create {
+    position: absolute;
+    /* margin-top: 3px; */
+
+    /* width: 100%;
+    margin: 15px; */
+    /* margin-left: 0px; */
+
+    padding: 2rem 1rem;
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.title {
+
+    background-color: black;
+    color: white;
+    width: 100px;
+    /* margin: auto; */
+    height: 20px;
+    border-radius: 5px;
+    padding: 9px;
+    margin: 6px;
+}
+
+form input {
+    display: block;
+    margin: 10px auto;
+    width: 230px;
+    height: 30px;
+    border-radius: 5px;
+    background: #dddddd;
+    border: none;
+}
+
+#in {
+    padding: 5px;
+    margin-left: 15px;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+#in:hover {
+    cursor: pointer;
+}
+
+#up:hover {
+    cursor: pointer;
+}
+
+#up {
+    padding: 5px;
+    margin-left: 15px;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+#dropdown {
+    padding: 5px;
+}
+
+.block {
+    display: block;
+}
+
+.none {
+    display: none;
+}
+
+.login__signin:hover {
+    cursor: pointer;
+}

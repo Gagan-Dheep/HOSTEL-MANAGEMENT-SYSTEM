@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave Application</title>
+    <link rel="stylesheet" href="styleforapplication.css">
+</head>
+
+<body></body>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="navbar">
+                <!-- <h2 id="logo">Hostel Management</h2> -->
+                <ul>
+                    <li><a href="student.html">HOME</a></li>
+                    <!-- <li><a href="index2.html">LOGIN</a></li> -->
+
+                    <!-- <li><a href="index.html">LOGOUT</a></li> -->
+                </ul>
+            </div>
+        </nav>
+        <div class="Application">
+            <h2>Application Form</h2>
+            <form id="appl" action="http://localhost:3000/api/student/application" method="post">
+                <div class="wrap"><label for="name">Name: </label><input type="text" name="name" id="name"
+                        placeholder="Enter Name" autocomplete="off"></div>
+                <div class="wrap"><label for="usn">USN: </label><input type="text" name="usn" id="usn"
+                        placeholder="Enter USN" autocomplete="off"></div>
+                <div class="wrap"><label for="from">Date From: </label><input type="date" name="date" id="from"
+                        placeholder="Enter date"><label for="till"> Till: </label><input type="date" name="date"
+                        id="till"></div>
+                <div class="wrap"><label for="periood">Time Period: </label><select name="period" id="period">
+                        <option value="Forenoon">ForeNoon</option>
+                        <option value="Afternoon">AfterNoon</option>
+                        <option value="Fullday">FullDay</option>
+                    </select></div>
+                <div class="wrap"><label for="number">TotalLeave: </label><input type="number" name="number" id="number"
+                        disabled></div>
+                <div class="wrap"><label for="desc" id="des">Give a Detailed explanation for the leave:
+                    </label><textarea name="desc" id="desc" cols="30" rows="9" placeholder="Enter here..."></textarea>
+                </div>
+                <button type="submit" id="submit">SEND</button>
+            </form>
+        </div>
+    </div>
+    <script src="appuse.js"></script>
+</body>
+
+</html>

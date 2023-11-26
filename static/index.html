@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>internship</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- <div class="blurback"> -->
+        <div class="login__forms">
+            <form id="login-in" action="http://localhost:3000/api/login" method="post" class="block login__register">
+                <span class="title">Hostel Login</span>
+                <span class="title">Sign IN</span>
+                <input id="email" class="input" type="email" name="email" placeholder="EMAIL">
+                <input id="password" class="input" type="password" name="password" placeholder="PASSWORD">
+                <select name="role" id="dropdown">
+                    <option value="STUDENT">STUDENT</option>
+                    <option value="WARDEN">WARDEN</option>
+                </select>
+                <button type="submit" id="in">Sign IN</button>
+                <div>
+                    <span class="login__account">Don't have an Account ?</span>
+                    <span class="login__signin" id="sign-up">Sign Up</span>
+                </div>
+            </form>
+        </div>
+        <div class="container">
+            <form id="login-up" action="http://localhost:3000/api/register" method="post" class="none login__create">
+                <span class="title">Hostel Registration</span>
+                <span class="title">Sign UP</span>
+                <input id="username" class="input" type="text" name="username" placeholder="USERNAME"
+                    autocomplete="off">
+                <input id="emaillo" class="input" type="email" name="email" placeholder="EMAIL" autocomplete="off">
+                <input id="passwordlo" class="input" type="password" name="password" placeholder="PASSWORD">
+                <select name="role" id="dropdownlo">
+                    <option value="STUDENT">STUDENT</option>
+                    <option value="WARDEN">WARDEN</option>
+                </select>
+                <button type="submit" id="up">Sign up</button>
+
+                <div>
+                    <span class="login__account">Already have an Account ?</span>
+                    <span class="login__signin" id="sign-in">Sign In</span>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="index1.js"></script>
+</body>
+
+</html>
