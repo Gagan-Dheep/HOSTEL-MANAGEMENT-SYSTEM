@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styleforapplicationchecker.css">
+</head>
+
+<body>
+    <ul>
+        <li><a href="student.html">HOME</a></li>
+        <!-- <li><a href="index2.html">LOGIN</a></li> -->
+
+    </ul>
+    <div class="conta">
+        <h3>Choose the name whose status is to be checked</h3>
+        <form action="http://localhost:3000/api/checker" method="post" id="checker">
+            <input type="text" name="name" id="checkername" placeholder="    Enter name here">
+            <button type="submit">Check</button>
+        </form>
+
+    </div>
+    <script src="checker.js"></script>
+</body>
+
+</html>

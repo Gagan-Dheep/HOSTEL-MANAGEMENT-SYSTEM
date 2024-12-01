@@ -1,0 +1,31 @@
+/* .navbar{
+    background-color: #a12b97;
+} */
+#firstpartpara {
+    min-width: 400px;
+    margin: 15px;
+    margin-left: 15px;
+}
+
+.firstpart {
+    /* background-color: aqua; */
+
+    /* margin-right: 840px; */
+    display: flex;
+    flex-direction: row;
+    height: 70vh;
+    margin-top: 30px;
+}
+
+#firstpart-image {
+    /* width: 1000px; */
+    margin-right: 10px;
+    height: 300px;
+    border-radius: 26px;
+}
+
+.secondpart {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

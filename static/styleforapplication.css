@@ -1,0 +1,133 @@
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+    width: 90px;
+    padding: 10px;
+    /* background-color: chocolate; */
+}
+
+li a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 14px;
+    border-radius: 9px;
+}
+
+/* body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+} */
+
+/* Body setup */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 5px;
+    padding: 0;
+    background-color: #f4f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 90vh; */
+    flex-direction: column;
+}
+
+/* Main container */
+.container {
+    margin-top: 0px;
+    width: 100%;
+    max-width: 800px;
+    /* margin: 30px auto; */
+    /* background-color: rgb(112, 47, 47); */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Application form styling */
+.Application h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form fields */
+.wrap {
+    margin-bottom: 15px;
+}
+
+.wrap label {
+    display: block;
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.wrap input,
+.wrap select,
+.wrap textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.wrap textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Submit button styling */
+#submit {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 1.1rem;
+    border-radius: 9px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+#submit:hover {
+    background-color: #218838;
+}
+
+/* Responsive design for smaller screens */
+/* @media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .wrap label,
+    .wrap input,
+    .wrap select,
+    .wrap textarea {
+        font-size: 0.9rem;
+    }
+
+    #submit {
+        font-size: 1rem;
+    }
+} */
