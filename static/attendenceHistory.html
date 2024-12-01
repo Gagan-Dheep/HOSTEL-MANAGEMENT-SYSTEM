@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance History</title>
+    <link rel="stylesheet" href="historyStyles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Attendance History</h1>
+        <button id="download-csv">Download CSV</button>
+        <table id="students-table">
+            <thead>
+                <tr>
+                    <th>Student ID</th>
+                    <th>Date</th>
+                    <th>Marked By</th>
+                </tr>
+            </thead>
+            <tbody id="attendance-body">
+                <!-- Rows will be dynamically generated here -->
+            </tbody>
+        </table>
+    </div>
+    <script src="scriptforHistoryCSV.js"></script>
+</body>
+</html>
+

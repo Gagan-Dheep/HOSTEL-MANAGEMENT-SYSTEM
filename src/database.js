@@ -1,20 +1,19 @@
+const { MongoClient } = require('mongodb');
 
-const mysql = require('mysql');
+const url = 'mongodb://localhost:27017'; // MongoDB URL
+const dbName = 'internship'; // Database name
 
-const connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: '',
-  database: 'internship'
-});
+let db = null;
 
-// Connect to the database
-connection.connect((err) => {
-  if (err) {
-    console.error(err);
-    process.exit(1);
-  }
+async function connectToMongoDB() {
+    if (db) {
+        return db;
+    }
+    const client = new MongoClient(url);
+    await client.connect();
+    console.log('Connected to MongoDB');
+    db = client.db(dbName); 
+    return db;
+}
 
-  console.log('Connected to database');
-});
-module.exports = connection;
+module.exports = connectToMongoDB;

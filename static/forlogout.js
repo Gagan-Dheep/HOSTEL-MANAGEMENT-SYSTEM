@@ -10,11 +10,12 @@ logout.addEventListener('click', () => {
     }).then(res => {
          return res.json()})
     .then(data => {
-        console.log(data);
+        // console.log(data);
         if (data.status == 'success') {
+            alert(data.success)
             window.location.href= '/'
         }else{
-            alert(data.error)
+            alert("Unsuccessful logout")
         }
     })
 })

@@ -1,12 +1,12 @@
 fetch('http://localhost:3000/wardenDash')
     .then(response => response.json())
     .then(result => {
-        //  console.log(result)
+         console.log(result)
         const tableBody = document.getElementById('data-table-body');
         for (const row of result) {
             const tableRow = document.createElement('tr');
             for (const key in row) {
-                if (key != 'slno') {
+                if (key != '_id') {
                     if (key != 'timeperiod') {
                         if (key != 'approval') {
                             // if(row[key] != 'null'){
@@ -26,7 +26,8 @@ fetch('http://localhost:3000/wardenDash')
             button.textContent = "accept";
             button.classList.add('butto')
             tableRow.appendChild(button);
-
+            console.log(row);
+            
             button.addEventListener('click', () => {
 
                 fetch('http://localhost:3000/approval/accept', {
@@ -35,7 +36,7 @@ fetch('http://localhost:3000/wardenDash')
                         "Content-Type": "application/json"
                     },
                     body: JSON.stringify({
-                        id: row.slno,
+                        id: row._id,
                     })
                 })
                 button.remove();
@@ -54,9 +55,9 @@ fetch('http://localhost:3000/wardenDash')
                         "Content-Type": "application/json"
                     },
                     body: JSON.stringify({
-                        id: row.slno,
+                        id: row._id,
                     })
-                })
+                }) 
                 button2.remove();
                 button.remove();
                 button2.classList.remove('butto')

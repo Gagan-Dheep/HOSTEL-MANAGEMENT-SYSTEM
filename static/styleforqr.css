@@ -1,8 +1,3 @@
-* {
-    padding: 0px;
-    margin: 0px;
-}
-
 ul {
     display: flex;
     flex-direction: row;
@@ -31,60 +26,121 @@ li a {
     border-radius: 9px;
 }
 
-.the-qr-container {
-    background-color: #dddddd;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    width: 650px;
-    margin: auto;
-    align-items: center;
-    font-weight: bolder;
-    border-radius: 15px;
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fa;
 }
 
-/* #codeg{
-    background-color: blue;
-} */
-.generating-button {
-    /* background-color: bisque; */
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-
+/* Navbar styling */
+/* ul {
+    list-style-type: none;
+    padding: 10px;
+    background-color: #007bff;
+    margin: 0;
+    text-align: center;
 }
 
-.qr-code-center{
-    background-color: aqua;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+ul li {
+    display: inline;
+    margin: 0 15px;
 }
-#submit-generatingbutton {
-    border: none;
-    padding: 7px;
-    margin: 9px;
-    border-radius: 8px;
-    background-color: black;
+
+ul li a {
+    text-decoration: none;
     color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+} */
+
+ul li a:hover {
+    color: #ffd700;
 }
 
-#tag-for-generation {
-    margin: 15px;
-    font-size: x-large;
+/* QR container styling */
+.the-qr-container {
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+h3#tag-for-generation {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+/* Form field styling */
 .usns-for-qr {
-    font-size: medium;
+    font-size: 1rem;
+    color: #555;
+    margin-right: 10px;
 }
 
 #usns {
-    padding: 4px;
-    border: none;
-    border-radius: 3px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
 }
-#submit-generatingbutton:hover{
+
+/* Button styling */
+.generating-button {
+    text-align: center;
+}
+
+#submit-generatingbutton {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#submit-generatingbutton:hover {
+    background-color: #218838;
+}
+
+/* QR code image styling */
+#qrcodee {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .the-qr-container {
+        padding: 20px;
+    }
+
+    h3#tag-for-generation {
+        font-size: 1.2rem;
+    }
+
+    #submit-generatingbutton {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    #usns {
+        font-size: 1rem;
+    }
 }

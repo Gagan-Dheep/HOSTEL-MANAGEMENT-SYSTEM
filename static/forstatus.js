@@ -1,10 +1,10 @@
 fetch('http://localhost:3000/applicationStatus')
     .then(response => response.json())
-    .then(result => {
+    .then(result => { 
         //  console.log(result)
         let helper = null;
         const tableBody = document.getElementById('data-table-body');
-        for (const row of result) {
+        for (const row of result) { 
             const tableRow = document.createElement('tr');
             for (const key in row) {
                 if (key != 'slno') {
@@ -16,6 +16,7 @@ fetch('http://localhost:3000/applicationStatus')
                         if (key != 'approval') {
                             // console.log(key)
                             const tableCell = document.createElement('td');
+                          
                             tableCell.textContent = row[key];
                             tableRow.appendChild(tableCell);
                         }
@@ -26,8 +27,8 @@ fetch('http://localhost:3000/applicationStatus')
             }
             //  if (result.approval != 'decline') {
             const span = document.createElement('span');
-            if (helper == 'null') {
-                span.textContent = 'Pending'
+            if (helper == 'pending') {
+                span.textContent = 'Pending' 
             }
             else if (helper == 'accept') {
                 span.textContent = 'Accepted'

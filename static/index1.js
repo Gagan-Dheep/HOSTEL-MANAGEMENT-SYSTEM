@@ -11,7 +11,7 @@ const signUp = document.getElementById('sign-up'),
 signUp.addEventListener('click', () => {
     loginIn.classList.remove('block')
     loginUp.classList.remove('none')
-
+ 
     loginIn.classList.toggle('none')
     loginUp.classList.toggle('block')
 })
@@ -58,6 +58,7 @@ loginIn.addEventListener("submit",(e)=>{
                     alert(data.success+" as Warden")
                     window.location.href='/warden'
                 }
+                localStorage.setItem("username", email)
             } else {
                 alert(data.error)
             }
@@ -104,12 +105,9 @@ loginUp.addEventListener("submit",(e)=>{
       } else {
           alert(data.error)
       }
-    //   console.log(inputs)
-    //   for (let key in inputs) {
-    //     key.valueOf = '';
-    //   }
   })
 })
+
 loginUp.addEventListener('submit', () => {
   
     // Clear input form after alert
@@ -121,100 +119,3 @@ loginUp.addEventListener('submit', () => {
       input.value = '';
     }
   });
-// loginIn.addEventListener('click', () => {
-//     inputs.forEach(input => input.value = '')
-// })
-// loginUp.addEventListener('click', () => {
-//     inputs.forEach(input => input.value = '')
-//})
-// loginIn.addEventListener('click', async(event) => {
-//     event.preventDefault();
-
-//     const formdata = new FormData(loginIn)
-//     const formDataJSON = JSON.stringify(Object.fromEntries(formdata));
-//     const response = await fetch('http://localhost:3000/api/login', {
-//         method: 'GET',
-//         headers: {
-//           'Content-Type': 'application/json'
-//         },
-//         body: formDataJSON
-      //});
-      // if (response.ok) {
-      //   // The user is logged in successfully
-      //   // Redirect the user to the dashboard page
-      //   //window.location.href = '/dashboard';
-      // } else {
-      //   // An error occurred
-      //   alert('An error occu while logging in');
-      // }
-//})
-// loginIn.addEventListener('submit', () => {
-//   const register = {
-//     email: loginIn.querySelector('input[name="email"]').value,
-//     password: loginIn.querySelector('input[name="password"]').value,
-//     role: loginIn.querySelector('input[name="role"]').value
-//   }
-//   fetch('http://localhost:3000/api/login', {
-//     method: "POST",
-//     body: JSON.stringify(register),
-//     headers: {
-//       "Content-Type":"application/json"
-//     }
-//   }).then(res => res.json())
-//   .then(data => {
-//     if (data.status == 'error') {
-//       console.log(data.status);
-//     }
-//   });
-// });
-// loginUp.addEventListener('submit', () => {
-//   const register = {
-//     username: loginUp.querySelector('input[name="username"]').value,
-//     email: loginUp.querySelector('input[name="email"]').value,
-//     password: loginUp.querySelector('input[name="password"]').value,
-//     role: loginUp.querySelector('input[name="role"]').value
-//   }
-//   fetch('http://localhost:3000/api/register', {
-//     method: "POST",
-//     body: JSON.stringify(register),
-//     headers: {
-//       "Content-Type":"application/json"
-//     }
-//   }).then(res => res.json())
-//   .then(data => {
-//     if (data.status == 'error') {
-//       console.log(data.status);
-//     }
-//   });
-// });
-//const myform=document.getElementById("login-in")
-    // event.preventDefault();
-    
-    // const formData = new FormData(loginUp)
-    // // const data = JSON.stringify(formData)
-    // const response = await fetch('http://localhost:3000/api/register', {
-    //     method: 'POST',
-    //     headers: {
-    //       'Content-Type': 'application/json'
-    //     },
-    //     body: formData
-    //    })//const message = await response.text;
-    //   // .then(response => {
-    //     if (response.status === 200) {
-    //       alert("inserted")
-    //     }else{
-    //     console.log("not hapenning")
-    //     }
-    //   })
-        // window.location.href = 'http://localhost:3000/'
-      // })
-      
-
-     
-      
-      
-      // if (response.ok) {
-      //   alert('successful')
-      // } else {
-      //   // An error occurred
-      //   alert('An error occurred while logging in');}
